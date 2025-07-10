@@ -1,0 +1,220 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: rgb(16, 86, 86);
+    color: white;
+  }
+  a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  /* Header */
+  header {
+    background: #222;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+
+    width: 100%;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 1rem;
+  }
+  nav h1 {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+  nav ul li {
+    list-style: none;
+  }
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .container{
+width:75%;
+align-content: center;
+justify-self: center;
+border: 12px dotted rgb(94, 189, 189);
+padding: 50px;
+background-color: transparent;  }
+  
+  /* Main Sections */
+  main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  img{
+    border-radius: 50%;
+  }
+  #about{
+    display: flex;
+    margin-top: 100px;
+    padding-left: 21px;
+    justify-content: space-around;
+    align-items: center;
+column-gap: 12px;
+border: 1px solid #ccc;
+transition: all 0.2s;
+border-radius: 12px;
+background-color:hsla(275, 92%, 47%, 0.559);
+  }
+  #about:hover{
+    background-color: rgb(90, 8, 90);
+    transform: scale(1.05);
+  }
+  #about h1{
+    padding-top: 45px;
+  }
+  section {
+    margin-bottom: 3rem;
+  }
+
+  .skills-grid, .projects-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  .skills-grid .skill-card{
+    background-color:hsla(275, 92%, 47%, 0.559);
+    border: 1px solid #ccc;
+    padding: 1rem;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  .skills-grid .skill-card:hover{
+    transform: scale(1.05);
+    background-color: rgb(21, 214, 21);
+  }
+  
+  .project-card {
+    background-color:hsla(275, 92%, 47%, 0.559);
+    border: 1px solid #ccc;
+    padding: 1rem;
+    color: white;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  .project-card:hover {
+    background-color:fuchsia;
+    transform: scale(1.03);
+  }
+ 
+  
+  #education{
+    background-color:hsla(275, 92%, 47%, 0.559);
+    border-top-left-radius: 40px;
+    height: auto;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 12px;
+    
+}
+#education h2{
+    background-color: rgb(29, 179, 239);
+    width: max-content;
+    border-radius: 100%;
+
+}
+#img{
+    position: sticky;
+    display: flex;
+    justify-self: center;
+    background-color: white;
+    margin: 15px;
+    z-index: 0;
+    transition: transform 0.2s;
+
+}
+#img:hover{
+ transform: scale(1.200);
+ z-index: 0;
+
+}
+#contact{
+  background-color: cornflowerblue;
+  color: black;
+   display: flex;
+
+   flex-flow: column nowrap;
+   justify-self: center;
+   padding:12px 20px 5px 40px;
+   height: 220px;
+   border: 1px solid white;
+   border-radius: 12px;
+   transition: transform 0.2s;
+  position: relative;
+  right: 12px;
+   border-bottom-right-radius: 50%;
+}
+#contact:hover{
+   transform: scale(1.09);
+   background-color: #007BFF;
+}
+  /* Footer */
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+  img{
+   transition: transform 0.2s ;
+}
+img:hover{
+    transform: scale(1.05);
+
+}
+ 
+  /* Responsive Menu */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      display: none;
+      background:hsla(219, 79%, 66%, 0.324);
+      width: 100%;
+    }
+    nav ul.show {
+      display: flex;
+      text-align: center;
+      width: 200%;
+      height: 27vh;
+      padding-top:12px ;
+      line-height: 2px;
+
+    }
+    .menu-toggle {
+      display: flex;
+     
+
+    }
+    header{
+height: min-content;    }
+    .container{
+width: 85%;    }
+  }
+
+  
